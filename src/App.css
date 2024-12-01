@@ -1,0 +1,272 @@
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-side{
+  display: flex;
+  flex-direction: row;
+}
+.col-md-6{
+  /* width: 25%; */
+}
+
+
+.tableTh{
+  cursor: pointer;
+  /* width: 4%; */
+  text-align: center;
+
+}
+.tableTd{                                  /*default cell values*/
+  /* width: 4%; */
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tableTd{                                   /*default cell values*/
+  line-height: .8vw;
+  font-size: .85vw;
+  font-family: "Comic Sans MS";
+  width: 3.4vw;  /* orig 55 */
+  border: 1px solid black;
+  height: 4.47vh;
+}
+.tableFirst{                               /* dealer card buttons */
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.tableHardFirst{                            /*playerHard buttons */
+  cursor: pointer;
+}
+.tableSoftFirst{                            /*playerSoft buttons */
+  cursor: pointer;
+}
+.tablePairFirst{                            /*playerPair buttons */
+   cursor: pointer;
+}
+.whiteColor {
+  font-weight: bolder;
+  color: white;
+}
+.blackColor{
+  color: black;
+}
+.greyColor{
+  color: #d9d2e9;
+}
+.redBack{ /*stand*/
+  background-color: #783f04;
+}
+.blackBack{
+  background-color: black;
+}
+.dodgerBack{ /*split*/
+  background-color: #38761d;
+}
+.blueBack{ /*Double or Hit*/
+  background-color: #134f5c;
+}
+.pinkBack{ /*Double or Stand*/
+  background-color: #85200c;
+}
+.greenBack{ /*hit*/
+  background-color: #274e13;
+}
+.reset{
+  cursor: pointer;
+}
+
+.yellowColor{
+  color: yellow;
+  font-weight: bolder;
+}
+.backImg{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.fixTab{
+  position: fixed;
+  z-index: 1;
+  top: 11.11111%;
+  left : 9.99999%;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 25px;
+  overflow-y: auto;
+}
+.fixTab::-webkit-scrollbar {
+  width: 0;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+.dealerHead1{
+  position: fixed;
+  left: 9vw;
+  top: 1vh;
+}
+.dealerHead1 .flex-row{
+  justify-content: flex-start;
+}
+.dealerBody1{                                   /* PlayerHard Table */
+  position: fixed;
+  left: .5vw;
+  top: 9vh;
+  cursor: crosshair ;
+}
+.dealerBody1 .tableRow .tableHardFirst{         /* playerHard buttons */
+  margin-right: 4vw;
+  width: 4.5vw;
+  height: 4.7vh;
+}
+
+.dealerBody1 .tableRow .tableHardFirst img{
+  width: 100%;
+  height: 100%;
+}
+
+.dealerBody1 .tableTd{
+  width: 3.6vw;
+}
+
+.dealerIcon {                         /* Dealer Buttons */
+  width: 3.7vw;
+  height: 7vh;
+}
+.dealerIcon img{
+  width: 100%;
+  height: 100%;
+}
+.dealerHead2{
+  position: fixed;
+  top : 1vh;/* orig 2 */
+  left : 53.5vw;
+  width: 35vw;
+}
+
+.dealerBody2{                          /* PlayerPairs Table */
+  top: 9vh; /* orig 12 vh */
+  position: fixed;
+  left: 49vw;  /* orig calc(50vw - 30px) */
+  cursor: crosshair ;
+}
+.dealerBody2 .tableRow .tablePairFirst{    /*PlayerPairs Buttons */
+  width: 4.5vw;   /* orig: 30px */
+  height: 4.7vh;  /* origL 30px */
+}
+.dealerBody2 .tableRow .tablePairFirst img{
+  width: 100%;
+  height: 100%;
+}
+.softBody1{                                /* PlayerSoft Table */
+  position: fixed;
+  left: .5vw; /* orig 4 */
+  /* bottom: .5vh; /* orig 30px */
+  top: 57vh;
+  cursor: crosshair;
+}
+.softBody1 .tableRow .tableSoftFirst{
+  margin-right: 4vw;
+  width: 4.5vw;   /* orig: 30px */
+  height: 4.7vh;  /* origL 30px */
+}
+.softBody1 .tableTd{
+  width: 3.6vw;  /* orig 56px */
+}
+.softBody1 .tableRow .tableSoftFirst img{
+  width: 100%;
+  height: 100%;
+}
+.btnGroup{
+  position: fixed;
+  right: 1.4vw;
+  top: 57vh;
+  display: flex;
+  flex-direction: row;
+}
+.btnGroup div{
+  width: 7vw;
+  padding: .5vw;
+}
+.btnGroup div img{
+  width: 100%;
+}
+.result {                                        /* entire results section */
+  top: 3.3vh; /* orig calc(12vh + 100px) */
+  position: fixed;
+  right: 0;
+  width: 10.5vw;
+}
+.dealerResult .col-md-6{                                /* dealer percentage */
+  color: yellow;
+  font-weight: bolder;
+  font-size: 1.7vw;
+  width: 4vw;
+  height: 2.4vw;
+  vertical-align: baseline;
+}
+.dealerResult select{                               /* dealer percentage dropdown */
+  font-size: 1.7vw;
+  border: 4px;
+  font-family: "Comic Sans MS";
+  background-color: black;
+  color: lightgoldenrodyellow;
+  width: 5vw;
+  margin-left: .4vw;
+  height: 2.4vw;
+  vertical-align: baseline;
+}
+
+input[type='checkbox'] {                           /* Checkboxes */
+  cursor: pointer;
+  border: .6vw;
+  margin-top: .6vh;
+  width: 1.6vw;
+  height: 1.6vw;
+  background-color: black;
+  color: lightpink;
+}
+.playerResult .col-md-12 select{                              /* player percentage dropdown */
+  margin-left: .2vh;
+  text-align: right;
+  font-size: 1.6vw;
+  font-family: "Comic Sans MS";
+  background-color: black;
+  color: lightpink;
+  border: 4px black;
+}
+.playerResult .col-md-12 .col-md-2{
+  width: 16.66667%;
+  font-size: 1.5vw;
+}
+.playerResult .col-md-12 .col-md-4{
+  width: 33.33333%;
+  font-size: 1.5vw;
+  color: lightgoldenrodyellow;
+}
+.playerResult .col-md-12 .col-md-6{         /*  player percentages */
+  text-align: right;
+  color: red;
+  margin-left: 1vw;
+  font-size: 1.8vw;
+  width: 7vw
+}
+.buymeacoffee{
+  position : fixed;
+  top: 36vh;
+  right : 2vw;
+  width: 7vw;
+  height: 7vw;
+}
+.buymeacoffee img{
+  width: 100%;
+  height: 100%;
+}
